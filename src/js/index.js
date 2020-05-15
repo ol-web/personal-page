@@ -17,9 +17,9 @@ const openMenu = () => {
 
 document.querySelector(".antibot-cotact").textContent = m;
 
-document.querySelector(".contact__form").addEventListener("submit", e => {
+document.querySelector(".contact__form").addEventListener("submit", (e) => {
   e.preventDefault();
-  location.href = `mailto:${m}?subject=${topicEl.value}&body=${messageEl.value}`;
+  open(`mailto:${m}?subject=${topicEl.value}&body=${messageEl.value}`);
 });
 
 menuBtnEl.addEventListener("click", () => {
@@ -27,18 +27,24 @@ menuBtnEl.addEventListener("click", () => {
   else closeMenu();
 });
 
-[].slice.call(document.querySelectorAll("[data-scroll-to-selector]")).forEach(el => {
-  const selector = el.getAttribute("data-scroll-to-selector");
+[].slice
+  .call(document.querySelectorAll("[data-scroll-to-selector]"))
+  .forEach((el) => {
+    const selector = el.getAttribute("data-scroll-to-selector");
 
-  el.addEventListener("click", () => {
-    closeMenu();
-    document.querySelector(selector).scrollIntoView({ behavior: "smooth", block: "start" });
+    el.addEventListener("click", () => {
+      closeMenu();
+      document
+        .querySelector(selector)
+        .scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
-});
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
     .register("sw" + ".js")
-    .then(registration => console.log("Service worker registration successful:", registration))
-    .catch(err => console.log("Service worker registration error:", err));
+    .then((registration) =>
+      console.log("Service worker registration successful:", registration)
+    )
+    .catch((err) => console.log("Service worker registration error:", err));
 }

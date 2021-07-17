@@ -1,0 +1,19 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity $transition;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: transform $transition;
+}
+
+.slide-left-enter,
+.slide-left-leave-to {
+  transform: translateX(-100%);
+}

@@ -1,0 +1,29 @@
+@import '~sass-utils-collection';
+
+@function z($layer) {
+  @return map-get($z-layers, $layer);
+}
+
+@mixin press-area($size: 42px) {
+  position: relative;
+
+  &::after {
+    @include size($size);
+    @include center-self;
+    content: '';
+  }
+}
+
+@mixin focus-visible($color: black, $outline-offset: 4) {
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color;
+
+    @if $outline-offset {
+      outline-offset: $outline-offset;
+    }
+  }
+}

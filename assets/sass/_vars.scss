@@ -1,0 +1,32 @@
+// Fonts
+$font: 'Roboto', sans-serif;
+
+// Breakpoints
+$media-breakpoints: (
+  xs: 0,
+  sm: 320px,
+  md: 768px,
+  lg: 1280px,
+  xl: 1920px
+);
+
+// Colors
+
+// Brown color version
+$vanilla: #e8e8e8;
+$chocolate: #402d20;
+$coffee: #715b4d;
+$dark-transparent: rgba(27, 27, 27, 0.79);
+
+// Purple color version
+// $vanilla: #e8e8e8;
+// $chocolate: #350054;
+// $coffee: #5a1486;
+// $dark-transparent: #e000ff;
+
+// Layers
+$z-layers: ();
+
+// Other
+$transition: 0.3s ease-out;
+$slope-height: 25px;

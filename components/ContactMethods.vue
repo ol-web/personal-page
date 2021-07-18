@@ -22,14 +22,14 @@
       </p>
     </li>
     <li class="list-item">
-      <i class="icon-fcc icon icon" />
+      <i class="icon-linkedin icon icon" />
       <p class="method">
         <a
           target="_blank"
           rel="noopener noreferrer"
           class="method-link"
-          href="https://www.freecodecamp.org/ol-web"
-          >ol-web</a
+          href="www.linkedin.com/in/ol-web"
+          >Michał Olejniczak</a
         >
       </p>
     </li>

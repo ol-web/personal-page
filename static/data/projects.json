@@ -39,7 +39,7 @@
           },
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/react-minesweeper"
+            "href": "https://ol-web.github.io/pages-static/react-minesweeper"
           }
         ]
       }
@@ -74,7 +74,7 @@
           },
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/egzaminy-prawo-jazdy"
+            "href": "https://ol-web.github.io/pages-static/egzaminy-prawo-jazdy"
           }
         ]
       },
@@ -89,7 +89,7 @@
           },
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/egzaminy-technik-informatyk"
+            "href": "https://ol-web.github.io/pages-static/egzaminy-technik-informatyk"
           }
         ]
       },
@@ -134,7 +134,7 @@
           },
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/nie-wiem-wlasnie-o-co-chodzi"
+            "href": "https://ol-web.github.io/pages-static/nie-wiem-wlasnie-o-co-chodzi"
           }
         ]
       }
@@ -154,7 +154,7 @@
           },
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/virtus"
+            "href": "https://ol-web.github.io/pages-static/virtus"
           }
         ]
       },
@@ -165,7 +165,7 @@
         "links": [
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/perth"
+            "href": "https://ol-web.github.io/pages-static/perth"
           }
         ]
       },
@@ -180,7 +180,7 @@
           },
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/repetitivejs"
+            "href": "https://ol-web.github.io/pages-static/repetitivejs"
           }
         ]
       },
@@ -191,7 +191,7 @@
         "links": [
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/saveafox"
+            "href": "https://ol-web.github.io/pages-static/saveafox"
           }
         ]
       },
@@ -206,7 +206,7 @@
           },
           {
             "label": "Live",
-            "href": "https://ol-web.github.io/parcel-boilerplate-pwa"
+            "href": "https://ol-web.github.io/pages-static/parcel-boilerplate-pwa"
           }
         ]
       }

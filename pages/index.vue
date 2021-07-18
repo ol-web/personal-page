@@ -11,6 +11,7 @@
           :key="index"
           :title="project.title"
           :items="project.items"
+          :lazy="index > 0"
         />
         <Miscellaneous :items="miscellaneousProjects" />
       </div>
@@ -52,7 +53,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @keyframes slideFromBelow {
   from {
-    transform: translateY(100px);
+    transform: translateY(50px);
   }
 
   to {

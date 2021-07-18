@@ -5,10 +5,19 @@
       <ul class="item-list">
         <li v-for="(item, index) in items" :key="index" class="project">
           <img
-            class="preview lazyload"
+            class="preview"
+            :class="{ lazyload: lazy }"
             height="310"
             width="400"
-            :data-src="item.imageSrc"
+            v-bind="
+              lazy
+                ? {
+                    'data-src': item.imageSrc
+                  }
+                : {
+                    src: item.imageSrc
+                  }
+            "
             alt=""
           />
           <div class="info">
@@ -17,8 +26,8 @@
 
             <div class="links-container">
               <a
-                v-for="(link, index) in item.links"
-                :key="index"
+                v-for="(link, index2) in item.links"
+                :key="index2"
                 class="rectangular-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,6 +54,10 @@ export default Vue.extend({
     items: {
       type: Array,
       default: () => []
+    },
+    lazy: {
+      type: Boolean,
+      default: true
     }
   }
 })
